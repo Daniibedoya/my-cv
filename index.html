@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+    <!-- Import lightgallery -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.5.0/css/lightgallery-bundle.min.css" integrity="sha512-lgRFGedXdci5Ykc5Wbgd8QCzt3lBmnkWcMRAS8myln2eMCDwQBrHmjqvUj9rBcKOyWMC+EYJnvEppggw1v+m8Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="shortcut icon" href="./assets/icons/ico.png" type="image/x-icon">
+    <title>Daniela</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="contain">
+        <div class="contain-2">
+
+          <div class="top">
+            <h1 class="title">Kelly Daniela Bedoya Agudelo</h1>
+            <p class="subtitle">Desarrolladora FrontEnd</p>
+            <a href="https://drive.google.com/file/d/18TBskVC-rTgRPksGPynWRLP7coDfkw31/view?usp=sharing" target="_blank">Ver mi CV</a>
+            <div class="divider"></div>
+            <p class="description">
+              Si lo que buscas es alguien con dominio en el desarrollo
+              Front-end, capacidad de maquetado de interfaces de usuario con
+              estilos y animaciones, habilidades para el diseño UI y
+              UX y algunos desarrollo Back-end y bases de datos.</br></br>
+              Con muchos deseos de mejorar mi experiencia y conocimientos, que
+              sea apasionada por su trabajo y tenga muchas ganas de
+              aprender... No dudes en contactarme.
+            </p>
+          </div>
+
+          <div class="proyectos">
+            <div class="title">
+              <h2>Proyectos</h2>
+            </div>
+
+            <div class="item-proyecto">
+              <div class="decripcion">
+                <div>
+                  <h3>Gestión de proyectos</h3>
+                  <p>Es el proyecto formativo de SENA. Es una aplicación que permite llevar un registro y control de un proyecto desde su inicio hasta su culminación, permite llevar un calendario de tiempos con todos los objetivos que se van a realizar. </p>
+                </div>
+                <div class="tecnologias">
+                  <h4>Tecnologías:</h4>
+                  <div class="imagenes">
+                    <img src="./assets/icons/html.png" alt="php">
+                    <img src="./assets/icons/css.png" alt="php">
+                    <img src="./assets/icons/js.png" alt="php">
+                    <img src="./assets/icons/php.png" alt="php">
+                  </div>
+                </div>
+              </div>
+              <div class="galeria" id="lightgallery">
+                <a href="./assets/images/asistencia-1.png">
+                  <img src="./assets/images/asistencia-1.png" />
+                </a>
+                <a href="./assets/images/asistencia-2.png">
+                  <img src="./assets/images/asistencia-2.png" />
+                </a>
+                <a href="./assets/images/asistencia-3.png">
+                  <img src="./assets/images/asistencia-3.png" />
+                </a>
+                <a href="./assets/images/asistencia-4.png">
+                  <img src="./assets/images/asistencia-4.png" />
+                </a>
+                <a href="./assets/images/asistencia-5.png">
+                  <img src="./assets/images/asistencia-5.png" />
+                </a>
+                <a href="./assets/images/asistencia-6.png">
+                  <img src="./assets/images/asistencia-6.png" />
+                </a>
+                <a href="./assets/images/asistencia-7.png">
+                  <img src="./assets/images/asistencia-7.png" />
+                </a>
+                <a href="./assets/images/asistencia-8.png">
+                  <img src="./assets/images/asistencia-8.png" />
+                </a>
+                <a href="./assets/images/asistencia-9.png">
+                  <img src="./assets/images/asistencia-9.png" />
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="contacto">
+            <h2>Contacto:</h2>
+            <a href="">kbedoyaagudelo6@gmail.com</a>
+            <a href="">3215746764 - 3116784449</a>
+            <a href="https://github.com/Daniibedoya?tab=repositories">GitHub</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Import lightgallery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.5.0/lightgallery.min.js" integrity="sha512-FDbnUqS6P7md6VfBoH57otIQB3rwZKvvs/kQ080nmpK876/q4rycGB0KZ/yzlNIDuNc+ybpu0HV3ePdUYfT5cA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.5.0/plugins/thumbnail/lg-thumbnail.min.js" integrity="sha512-cavMj99wBO8HNDcMfXf1r6SGMFyrNYxq/Wle3vqeRNRHvlwvq2GRgwqQkPGxkXGXVa30WfF9bHEZmFK7T/Ya7g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.5.0/plugins/zoom/lg-zoom.min.js" integrity="sha512-5kOfZonUGdOM0k5LCWttgUTvxceTa3DCwYtH3alvvE+oULFgoIN11oMIoubI1HcOXOmGDuuMvi00Px0HwHZsaQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+    <script type="text/javascript">
+      lightGallery(document.getElementById('lightgallery'), {
+          plugins: [lgZoom, lgThumbnail],
+          licenseKey: 'your_license_key',
+          speed: 500,
+      });
+  </script>
+  </body>
+</html>

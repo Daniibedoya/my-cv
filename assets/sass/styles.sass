@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap')
+
+*
+  padding: 0
+  margin: 0
+
+// Media sizes
+@mixin screen-sm
+  @media only screen and (max-width: 546px)
+    @content
+@mixin screen-md
+  @media only screen and (max-width: 720px)
+    @content
+@mixin screen-lg
+  @media only screen and (max-width: 960px)
+    @content
+
+// Colors
+$color-light: #ffffe8
+$color-gray: #242424
+$color-primary: #73F9C5
+$color-secondary: #8829FF
+// Fonts
+$font-quicksand: 'Quicksand', sans-serif
+$font-ubuntu: 'Ubuntu', sans-serif
+// Typography
+h1, h2 ,h3, h4, h5, h6
+  font-family: $font-quicksand
+p, a
+  font-family: $font-ubuntu
+  color: $color-gray
+  font-weight: lighter
+
+body
+  background-color: $color-light
+
+.container
+  padding: 1em
+  .contain
+    padding: 1em
+    border: 4px solid $color-secondary
+    .contain-2
+      padding: 3em 8%
+      border: 4px solid $color-primary
+      .top
+        display: flex
+        flex-direction: column
+        align-items: center
+        justify-content: center
+        text-align: center
+        .title
+          font-size: 80px
+          line-height: 105%
+          @include screen-md
+            font-size: 50px
+        .subtitle
+          font-size: 30px
+          margin-top: 1em
+          @include screen-md
+            font-size: 25px
+        a
+          font-weight: bold
+          font-size: 25px
+          margin-top: 20px
+        .divider
+          width: 20%
+          height: 3px
+          background-color: $color-secondary
+          margin: 2em 0
+        .description
+          width: 60%
+          color: $color-gray
+          font-weight: lighter
+          @include screen-md
+            width: 100%
+
+      .proyectos
+        margin-top: 6em
+        .title
+          display: flex
+          justify-content: center
+          margin-bottom: 8em
+          h2
+            font-size: 50px
+            border-bottom: 4px solid $color-secondary
+        .item-proyecto
+          display: flex
+          justify-content: space-between
+          margin-bottom: 3em
+          .decripcion
+            width: 30%
+            display: flex
+            flex-direction: column
+            h3
+              font-size: 25px
+              margin-bottom: 20px
+            .tecnologias
+              margin-top: 3em
+              .imagenes img
+                transition: all 200ms ease-in-out
+                &:hover
+                  transform: scale(1.1)
+          .galeria
+            width: 65%
+            display: flex
+            flex-wrap: wrap
+            justify-content: space-between
+            @include screen-lg
+              margin-top: 2em
+            a
+              width: 31%
+              transition: all 200ms ease-in-out
+              @include screen-md
+                width: 48%
+              &:hover
+                transform: scale(1.1)
+              img
+                width: 100%
+                margin-bottom: 1em
+                border: 3px solid $color-primary
+          @include screen-lg
+            flex-direction: column
+            .decripcion, .galeria
+              width: 100%
+      .contacto
+        display: flex
+        flex-direction: column
+        padding-bottom: 3em
+        h2
+          margin-bottom: 20px
+        a
+          margin-top: 5px
